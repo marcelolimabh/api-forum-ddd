@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src --ext .ts --fix"
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest run --dir src/domain/use-cases",
+    "test:watch": "vitest --dir src/domain/use-cases"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "tsup": "^7.2.0",
     "tsx": "^3.12.8",
     "typescript": "^5.2.2",
-    "vitest": "^0.33.0"
+    "vitest": "^0.33.0",
+    "vitest-tsconfig-paths": "^3.4.1"
   }
 }
